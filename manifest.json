@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "SLT Data Usage Calculator",
+    "version": "1.0.0",
+    "description": "A chrome extension that allows you to calculate your peak data usage from yesterday so that you can calculate today's peak data usage.",
+  
+    "content_scripts": [
+      {
+        "js": [
+          "scripts/content.js"
+        ],
+        "matches": [
+          "https://myslt.slt.lk/boardBand/dailyUsage/*"
+        ]
+      }
+    ]
+  }
